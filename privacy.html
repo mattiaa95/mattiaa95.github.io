@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — eNDS</title>
+<meta name="description" content="eNDS collects no personal data. No analytics, no advertising, no accounts.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <img src="assets/icon.png" alt="">
+    <strong>eNDS</strong>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap legal">
+  <h1>Privacy Policy</h1>
+  <p class="updated">For the eNDS app for iPhone and iPad · Last updated 12 August 2026</p>
+
+  <div class="callout">
+    <p><strong>The short version:</strong> eNDS collects nothing about you. There is no analytics, no advertising, no tracking and no account. The app has no server of its own, so there is nowhere for your information to be sent.</p>
+  </div>
+
+  <h2>What eNDS collects</h2>
+  <p>Nothing. eNDS does not collect, store or transmit personal data, and it contains no analytics, advertising or tracking software of any kind. It does not ask you to create an account, and it does not identify you or your device.</p>
+
+  <h2>Your games and saves</h2>
+  <p>The games you import, their save files, your save states and your settings are stored on your device only. eNDS does not upload them anywhere and has no server to upload them to. They are included in your own iCloud or computer backups exactly like any other app's files, under your control and Apple's terms, not ours.</p>
+
+  <h2>The microphone</h2>
+  <p>Some Nintendo DS games use the console's microphone. eNDS asks for microphone permission the first time a game actually requests it — never at launch — and you can refuse, or turn it off later in iOS Settings or in the app's own Audio settings.</p>
+  <p>When it is in use, audio is passed straight to the emulated console and is processed entirely on your device. It is never recorded to a file, never stored, and never transmitted anywhere.</p>
+
+  <h2>Purchases</h2>
+  <p>eNDS PRO is an optional in-app purchase handled entirely by Apple. Payments, billing details and subscription status are processed by Apple under Apple's own privacy policy. We never see, receive or store your payment information. The app only ever learns whether a valid purchase exists for your Apple Account, which is what unlocks the PRO features.</p>
+
+  <h2>What Apple tells us</h2>
+  <p>Because eNDS is distributed on the App Store, Apple provides developers with aggregated, anonymous statistics — things like how many people downloaded the app in a country, or how many crashes occurred. These come from Apple, cannot be traced back to an individual, and are not something the app itself gathers or sends.</p>
+
+  <h2>Children</h2>
+  <p>eNDS is not directed at children specifically, and because it collects no personal data from anyone, it collects none from children either.</p>
+
+  <h2>This website</h2>
+  <p>This site is a set of static pages hosted on GitHub Pages. It has no cookies, no analytics and no third-party scripts, fonts or trackers. As with any web host, GitHub's servers may log basic technical information such as IP addresses in order to serve the pages; that logging is GitHub's, governed by <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" rel="noopener">GitHub's privacy statement</a>, and we neither receive nor have access to it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy ever changes, the revised version will be published on this page with a new date at the top. Material changes affecting how the app handles your information will also be described in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or about anything else in eNDS: <a href="index.html#contact" data-contact="privacy">send an email</a>.</p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="https://github.com/mattiaa95/eNDS" rel="noopener">Source code</a>
+      <a href="index.html#contact" data-contact="support">Contact</a>
+    </div>
+    <p>eNDS is not affiliated with, endorsed by, or associated with Nintendo, nor with the melonDS team.</p>
+    <p>© 2026 eNDS · Released under the GNU General Public License v3</p>
+  </div>
+</footer>
+
+
+<script>
+/* The address is assembled at runtime, so it never sits in the static HTML
+   that scrapers read. */
+(function () {
+  var a = 'mattiaa95' + '+' + 'ends' + '@' + 'gmail.com';
+  document.querySelectorAll('a[data-contact]').forEach(function (el) {
+    el.href = 'mailto:' + a + '?subject=' +
+      encodeURIComponent('eNDS ' + (el.getAttribute('data-contact') || 'support'));
+  });
+})();
+</script>
+</body>
+</html>
