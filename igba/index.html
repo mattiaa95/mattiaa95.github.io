@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iGBA — community and support</title>
+<meta name="description" content="The community and support page for iGBA, a Game Boy, Game Boy Color and Game Boy Advance emulator for iPhone and iPad. Join the Discord or get in touch.">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta property="og:title" content="iGBA — community and support">
+<meta property="og:description" content="Join the iGBA community on Discord, or get in touch.">
+<meta property="og:image" content="https://mattiaa95.github.io/igba/assets/icon.png">
+<meta property="og:url" content="https://mattiaa95.github.io/igba/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <img src="assets/icon.png" alt="">
+    <strong>iGBA</strong>
+    <nav>
+      <a href="#community">Discord</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <img class="icon" src="assets/icon.png" alt="iGBA app icon">
+  <h1>iGBA</h1>
+  <p class="tagline">A Game Boy, Game Boy Color and Game Boy Advance emulator for iPhone and iPad.</p>
+  <p class="cta"><a class="btn" href="https://apps.apple.com/app/id6482993626" rel="noopener">Get iGBA on the App Store</a></p>
+</div>
+
+<section id="community">
+  <div class="wrap">
+    <div class="community-card">
+      <h2>The iGBA community is on Discord</h2>
+      <p>One person builds iGBA. The community is where the rest happens: help with a
+         game that misbehaves, features being argued over before they are built, and
+         early access to what is coming next.</p>
+
+      <!-- Permanent invite: never expires, unlimited uses, created by the bot
+           so the public invite API reports it and not a person. -->
+      <p><a class="btn discord" href="https://discord.gg/pDsywSPgNt" rel="noopener">Join the Discord server</a></p>
+
+      <ul class="perks">
+        <li><b>Get help fast</b>A game that will not boot, a save you cannot import, a controller that will not map.</li>
+        <li><b>Shape the app</b>Feature requests are read, argued over, and some of them ship.</li>
+        <li><b>Test first</b>TestFlight builds land there before they reach the App Store.</li>
+        <li><b>Report bugs properly</b>With a device, an iOS version and a game — the three things that make a bug fixable.</li>
+      </ul>
+
+      <p class="house-rule">
+        <b>One house rule.</b> No ROMs, no BIOS files, no links to sites that host them —
+        not in the server, not in DMs. Bring your own games, as you already do in the app.
+        It is the only reason an emulator like this gets to exist. Breaking this is an
+        instant ban, with no warning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="lead">Bug reports, a game that misbehaves, or just a note that it worked — all of it is read.
+       The Discord server is usually faster; email works just as well.</p>
+    <p>
+      <a class="btn" href="#community">Ask on Discord</a>
+      <a class="btn ghost" href="index.html#contact" data-contact="support">Email support</a>
+    </p>
+    <p style="margin-top:18px; color:var(--muted); font-size:14.5px">
+      For a bug, it helps enormously to say which device and iOS version you are on, and which game.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="https://apps.apple.com/app/id6482993626" rel="noopener">App Store</a>
+      <a href="https://igbaapp.wordpress.com/support/" rel="noopener">Support</a>
+      <a href="https://igbaapp.wordpress.com/privacy-policy/" rel="noopener">Privacy Policy</a>
+      <a href="https://igbaapp.wordpress.com/terms-conditions/" rel="noopener">Terms &amp; Conditions</a>
+      <a href="index.html#contact" data-contact="support">Contact</a>
+    </div>
+    <p>iGBA does not include, provide or link to any games, BIOS files or copyrighted material.
+       It plays files you supply yourself, from cartridges you own.</p>
+    <p>iGBA is not affiliated with, endorsed by, or associated with Nintendo. "Game Boy", "Game Boy Color"
+       and "Game Boy Advance" are trademarks of Nintendo, used here only to describe what the software emulates.</p>
+    <p style="margin-top:16px">© 2026 iGBA</p>
+  </div>
+</footer>
+
+<script>
+/* The address is assembled at runtime, so it never sits in the static HTML
+   that scrapers read. */
+(function () {
+  var a = 'mattiaa95' + '+' + 'igba' + '@' + 'gmail.com';
+  document.querySelectorAll('a[data-contact]').forEach(function (el) {
+    el.href = 'mailto:' + a + '?subject=' +
+      encodeURIComponent('iGBA ' + (el.getAttribute('data-contact') || 'support'));
+  });
+})();
+</script>
+</body>
+</html>
