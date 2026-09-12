@@ -16,6 +16,10 @@ Everything the pages load comes from this folder.
 The app itself is open source under GPLv3: see the
 [eNDS repository](https://github.com/mattiaa95/eNDS).
 
+Both the app and these pages were written with heavy use of AI coding
+assistants. That is stated on the landing page too, and in the app's
+repository, rather than left to be inferred.
+
 "Nintendo DS" is a trademark of Nintendo Co., Ltd., used on these pages only
 to describe what the software emulates. eNDS is not affiliated with, endorsed
 by, or associated with Nintendo, nor with the melonDS team.
